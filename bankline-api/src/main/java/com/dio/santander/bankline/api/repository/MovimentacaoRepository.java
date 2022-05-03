@@ -1,4 +1,4 @@
-package com.dio.santander.bankline.api;
+package com.dio.santander.bankline.api.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
