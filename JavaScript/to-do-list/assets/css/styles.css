@@ -1,0 +1,47 @@
+.btn {
+    cursor: pointer;
+    background-color: #E0F6FF;
+    border-radius: 5px;
+    color: #72bcdb;
+    border: 1px solid #72bcdb;
+    height: 25px;
+}
+
+#inputTarefa {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 20px;
+}
+
+ul {
+    margin: 15px 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
