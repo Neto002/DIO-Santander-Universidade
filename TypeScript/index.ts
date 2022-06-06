@@ -1,5 +1,22 @@
-function soma(a: number, b: number) {
-    return a + b
+interface IAnimal {
+  nome: string;
+  especie: "terrestre" | "aquatico" | "aereo";
+  emitirSom(): void;
 }
 
-soma(1, 2)
+interface IFelinos extends IAnimal {
+  corPelo: string;
+}
+
+const animal: IAnimal = {
+  nome: "Elefante",
+  especie: "terrestre",
+  emitirSom: () => "barulho de elefante",
+};
+
+const felino: IFelinos = {
+  nome: "Tigre",
+  especie: "terrestre",
+  corPelo: "preto",
+  emitirSom: () => "barulho de tigre",
+};
