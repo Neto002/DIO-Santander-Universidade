@@ -1,3 +1,5 @@
 .metadata/
 antonio-neto-bankline-api/
 TypeScript/node_modules
+dist
+.cache
