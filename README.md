@@ -6,3 +6,4 @@
 &nbsp;
  - FlexBox com CSS3
  - JavaScript
+ - TypeScript
