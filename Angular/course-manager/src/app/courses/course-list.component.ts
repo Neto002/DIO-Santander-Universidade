@@ -3,7 +3,7 @@ import { Course } from './course';
 
 @Component({
   selector: 'app-course-list',
-  templateUrl: './course-list-component.html',
+  templateUrl: './course-list.component.html',
 })
 export class CourseListComponent implements OnInit {
   courses: Course[] = [];
@@ -13,7 +13,7 @@ export class CourseListComponent implements OnInit {
       {
         id: 1,
         name: 'Angular Forms',
-        imageUrl: '',
+        imageUrl: './assets/images/forms.png',
         price: 99.99,
         code: '1254',
         duration: 120,
@@ -23,7 +23,7 @@ export class CourseListComponent implements OnInit {
       {
         id: 2,
         name: 'Angular HTTP',
-        imageUrl: '',
+        imageUrl: './assets/images/http.png',
         price: 99.99,
         code: '1255',
         duration: 80,
