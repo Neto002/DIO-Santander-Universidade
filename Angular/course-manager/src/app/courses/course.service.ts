@@ -16,16 +16,22 @@ export class CourseService {
   }
 
   retrieveById(id: number): Observable<Course> {
-    return this.httpClient.get<Course>(`${this.coursesUrl}/${id}`)
+    return this.httpClient.get<Course>(`${this.coursesUrl}/${id}`);
   }
 
   save(course: Course): Observable<Course> {
     if (course.id) {
-      return this.httpClient.put<Course>(`${this.coursesUrl}/${course.id}`, course)
+      return this.httpClient.put<Course>(
+        `${this.coursesUrl}/${course.id}`,
+        course
+      );
     } else {
-      return this.httpClient.post<Course>(this.coursesUrl, course)
-
+      return this.httpClient.post<Course>(this.coursesUrl, course);
     }
+  }
+
+  deleteById(id: number): Observable<any> {
+    return this.httpClient.delete<any>(`${this.coursesUrl}/${id}`);
   }
 }
 
