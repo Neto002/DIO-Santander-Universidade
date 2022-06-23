@@ -7,3 +7,4 @@
  - FlexBox com CSS3
  - JavaScript
  - TypeScript
+ - Angular FrameWork
