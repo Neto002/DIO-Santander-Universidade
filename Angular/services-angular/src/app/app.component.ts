@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   count = 0;
+  nome = "Antonio Neto";
+  @Input()
+  text = '';
+
+  pessoas = [
+    {
+      nome: "Antonio",
+      sobrenome: "Neto"
+    },
+    {
+      nome: "Maria",
+      sobrenome: "X"
+    },
+    {
+      nome: "Joao",
+      sobrenome: "X"
+    }
+  ]
 
   constructor() {}
   
   ngOnInit(): void {
+    console.log(this.pessoas);
+    
     let interval = setInterval(() => {
       this.count++;
       if (this.count === 10) {
         clearInterval(interval);
       }
     }, 1000);
+  }
+
+  clicou(): void {
+    console.log("Click");
   }
 }
