@@ -1,1 +1,43 @@
-<p>user-form works!</p>
+<div class="card w-100 my-5">
+    <div class="car-body">
+        <h1 class="card-title text-center">Cadastro de Usuários</h1>
+        <form action="">
+            <div class="row my-4">
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                        <label for="nome">Nome</label>
+                    </div>
+                </div>
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome">
+                            <label for="sobrenome">Sobrenome</label>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="idade" placeholder="Digite sua idade">
+                        <label for="idade">Idade</label>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="profissao" placeholder="Digite sua profissão">
+                        <label for="profissao">Profissão</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="form-group col-12 mt-4">
+                    <button class="btn btn-outline-danger float-start mx-3" type="button" routerLink="/">Cancelar</button>
+                    <button class="btn btn-outline-success float-end mx-3" type="button">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
