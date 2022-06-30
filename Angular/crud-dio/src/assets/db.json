@@ -1,11 +1,11 @@
 {
-    "usuarios": [
-        {
-            "id": 1,
-            "nome": "Antonio",
-            "sobrenome": "Neto",
-            "idade": 19,
-            "profissão": "Estudante"
-        }
-    ]
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Antonio",
+      "sobrenome": "Neto",
+      "idade": "19",
+      "profissao": "Estudante"
+    }
+  ]
 }

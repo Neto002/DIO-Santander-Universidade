@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/user';
@@ -9,6 +9,13 @@ import { User } from '../models/user';
 export class UserService {
 
   apiURL = 'http://localhost:3000/usuarios'
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Token': '',
+    })
+  }
+
   constructor(private httpClient: HttpClient) { }
 
   // Retorna lista de usuários
@@ -16,7 +23,13 @@ export class UserService {
     return this.httpClient.get<User[]>(this.apiURL)
   }
 
+  // Cria usuário no banco
   postUser(user: User): Observable<User> {
-    return this.httpClient.post<User>(this.apiURL, user)
+    return this.httpClient.post<User>(this.apiURL, user, this.httpOptions)
+  }
+
+  // Deleta usuário do banco
+  deleteUser(id: number): Observable<User> {
+    return this.httpClient.delete<User>(`${this.apiURL}/${id}`)
   }
 }
