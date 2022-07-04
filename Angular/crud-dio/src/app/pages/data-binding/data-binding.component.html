@@ -1,0 +1,10 @@
+<h1>{{ text }}</h1>
+<img [src]="imgURL" [alt]="imgDesc" />
+<br />
+<input type="text" [(ngModel)]="textInput" />
+<p>{{ textInput }}</p>
+
+<app-button btnText="Enviar" btnType="btn-success"></app-button>
+<app-button btnText="Enviar" btnType="btn-danger"></app-button>
+<app-button btnText="Enviar" btnType="btn-primary"></app-button>
+<app-button btnText="Enviar" btnType="btn-secondary" (clickChildren)="clicouFilho($event)"></app-button>

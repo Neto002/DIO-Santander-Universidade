@@ -55,6 +55,12 @@ export class UserFormComponent implements OnInit {
       error: (error) => console.log(error),
       complete: () => this.router.navigate(['/']),
     });
+    // this.userForm.patchValue({
+    //   nome: '',
+    //   sobrenome: '',
+    //   idade: '',
+    //   profissao: '',
+    // });
   }
 
   updateUser(): void {

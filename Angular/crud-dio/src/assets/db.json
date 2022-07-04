@@ -1,25 +1,25 @@
 {
   "usuarios": [
     {
-      "id": 1,
       "nome": "Antonio",
       "sobrenome": "Neto",
-      "idade": "19",
-      "profissao": "Estudante"
+      "idade": 19,
+      "profissao": "Estudante",
+      "id": 1
     },
     {
-      "id": 2,
       "nome": "João",
-      "sobrenome": "z",
-      "idade": "22",
-      "profissao": "dev"
+      "sobrenome": "X",
+      "idade": 22,
+      "profissao": "Desenvolvedor",
+      "id": 2
     },
     {
-      "id": 3,
       "nome": "Maria",
       "sobrenome": "Y",
-      "idade": "30",
-      "profissao": "dev"
+      "idade": 30,
+      "profissao": "Desenvolvedora",
+      "id": 3
     }
   ]
 }
