@@ -13,13 +13,6 @@
       "idade": 22,
       "profissao": "Desenvolvedor",
       "id": 2
-    },
-    {
-      "nome": "Maria",
-      "sobrenome": "Y",
-      "idade": 30,
-      "profissao": "Desenvolvedora",
-      "id": 3
     }
   ]
 }

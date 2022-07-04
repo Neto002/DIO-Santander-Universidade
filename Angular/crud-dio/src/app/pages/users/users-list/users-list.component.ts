@@ -29,9 +29,11 @@ export class UserListComponent implements OnInit, OnChanges {
 
   deleteUser(id: number): void {
     this.userService.deleteUser(id).subscribe({
-      next: (data) => console.log(`Usuário ${data.nome} ${data.sobrenome}`),
+      next: (data) => {
+        console.log(`Usuário ${data.nome} ${data.sobrenome} excluído com sucesso!`);
+        this.getUsers();
+      },
       error: (error) => console.log(error),
     });
-    this.getUsers();
   }
 }

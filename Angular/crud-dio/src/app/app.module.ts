@@ -10,6 +10,7 @@ import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ButtonComponent } from './components/button/button.component';
+import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ButtonComponent } from './components/button/button.component';
     UserFormComponent,
     DataBindingComponent,
     ButtonComponent,
+    TodoListComponent,
   ],
   imports: [
     BrowserModule,
