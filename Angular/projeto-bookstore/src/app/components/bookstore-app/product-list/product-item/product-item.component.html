@@ -1,1 +1,17 @@
-<p>product-item works!</p>
+<div class="container">
+    <div class="card shadow-sm mb-3" style="width: 18rem">
+      <img [src]="book.img" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{book.name}}</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Categoria: {{book.category}}</li>
+        <li class="list-group-item">Quantidade disponível: {{book.quantity}}</li>
+        <li class="list-group-item">Preço: {{book.price | currency:"BRL"}}</li>
+      </ul>
+      <div class="btn-group">
+        <button class="btn btn-sm btn-primary">Comprar</button>
+        <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+      </div>
+    </div>
+</div>
