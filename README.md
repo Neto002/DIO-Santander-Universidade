@@ -8,3 +8,5 @@
  - JavaScript
  - TypeScript
  - Angular FrameWork
+ - Java
+ - Spring Framework
